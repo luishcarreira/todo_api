@@ -1,0 +1,179 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TodoApi | v1",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/todoitems": {
+      "get": {
+        "tags": [
+          "TodoApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArrayOfTodo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TodoApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Todo"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/todoitems/complete": {
+      "get": {
+        "tags": [
+          "TodoApi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArrayOfTodo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/todoitems/{id}": {
+      "get": {
+        "tags": [
+          "TodoApi"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TodoApi"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/int"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Todo"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TodoApi"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ArrayOfTodo": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Todo"
+        }
+      },
+      "boolean": {
+        "type": "boolean"
+      },
+      "int": {
+        "type": "integer",
+        "format": "int32"
+      },
+      "string": {
+        "type": "string",
+        "nullable": true
+      },
+      "Todo": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/int"
+          },
+          "name": {
+            "$ref": "#/components/schemas/string"
+          },
+          "isComplete": {
+            "$ref": "#/components/schemas/boolean"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "TodoApi"
+    }
+  ]
+}
