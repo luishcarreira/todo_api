@@ -5,6 +5,36 @@
     "version": "1.0.0"
   },
   "paths": {
+    "/login": {
+      "post": {
+        "tags": [
+          "TodoApi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "$ref": "#/components/schemas/string"
+                  },
+                  "password": {
+                    "$ref": "#/components/schemas/string"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/todoitems": {
       "get": {
         "tags": [
@@ -152,6 +182,9 @@
         "format": "int32"
       },
       "string": {
+        "type": "string"
+      },
+      "string2": {
         "type": "string",
         "nullable": true
       },
@@ -162,7 +195,7 @@
             "$ref": "#/components/schemas/int"
           },
           "name": {
-            "$ref": "#/components/schemas/string"
+            "$ref": "#/components/schemas/string2"
           },
           "isComplete": {
             "$ref": "#/components/schemas/boolean"

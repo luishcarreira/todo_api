@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GlqhfBHp3Os=",
+  "dgSpecHash": "JN5TF1L3Bis=",
   "success": true,
   "projectFilePath": "C:\\Users\\luish\\OneDrive\\Documentos\\code\\c_sharp\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.0-preview.6.24328.4\\microsoft.aspnetcore.authentication.jwtbearer.9.0.0-preview.6.24328.4.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\9.0.0-preview.6.24328.4\\microsoft.aspnetcore.diagnostics.entityframeworkcore.9.0.0-preview.6.24328.4.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0-preview.6.24328.4\\microsoft.aspnetcore.openapi.9.0.0-preview.6.24328.4.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.6.24327.4\\microsoft.entityframeworkcore.9.0.0-preview.6.24327.4.nupkg.sha512",
@@ -21,8 +22,15 @@
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-preview.6.24327.7\\microsoft.extensions.logging.abstractions.9.0.0-preview.6.24327.7.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.6.24327.7\\microsoft.extensions.options.9.0.0-preview.6.24327.7.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.6.24327.7\\microsoft.extensions.primitives.9.0.0-preview.6.24327.7.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.0\\microsoft.identitymodel.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.0\\microsoft.identitymodel.jsonwebtokens.8.0.0.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.0\\microsoft.identitymodel.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.0-preview1\\microsoft.identitymodel.protocols.8.0.0-preview1.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.0-preview1\\microsoft.identitymodel.protocols.openidconnect.8.0.0-preview1.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.0\\microsoft.identitymodel.tokens.8.0.0.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.openapi\\1.6.13\\microsoft.openapi.1.6.13.nupkg.sha512",
-    "C:\\Users\\luish\\.nuget\\packages\\scalar.aspnetcore\\1.1.1\\scalar.aspnetcore.1.1.1.nupkg.sha512"
+    "C:\\Users\\luish\\.nuget\\packages\\scalar.aspnetcore\\1.1.1\\scalar.aspnetcore.1.1.1.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.0\\system.identitymodel.tokens.jwt.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
